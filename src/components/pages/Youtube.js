@@ -30,7 +30,7 @@ function Youtube() {
             redirect: 'follow'
         };
         
-        fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=32&q=webstoryboy&type=video&key=AIzaSyCliG8iTFLuXbPp-GdaqbNIyx_1teBd2kw", requestOptions)
+        fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=32&q=webstoryboy&type=video&key=", requestOptions)
         .then(response => response.json())
         //.then(result => console.log(result))
         .then((result) => {setVideos(result.items);})
