@@ -27,10 +27,10 @@ class MovieDetail extends React.Component {
                 <Contents>
                 <section id="movieCont">
   
-                    <div class="movie__detail">
+                    <div className="movie__detail">
                         <img src={`https://image.tmdb.org/t/p/original/${location.state.img}`} alt={location.state.title} />                  
                         <h3>{location.state.title} </h3>
-                        <div class="channel">
+                        <div className="channel">
                             <p>{location.state.releaseDate}</p>
                         </div>
                         <div class="desc">
