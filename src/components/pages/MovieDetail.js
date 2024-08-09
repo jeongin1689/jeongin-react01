@@ -35,7 +35,7 @@ class MovieDetail extends React.Component {
                         </div>
                         <div class="desc">
                             <h4>description</h4>
-                            <p>{location.state.overview}</p>
+                            <p>{location.state.overview === "" ? (<p>설명이 없습니다.</p>) : (<p>{location.state.overview}</p>)}</p>
                         </div>
 
                         <Link className="list-btn" to="/movie">목록보기</Link>
@@ -47,6 +47,9 @@ class MovieDetail extends React.Component {
                 <Footer />
                 </>
             )
+            // if(location.state.overview === ""){
+            //     return<>설명이 없습니다.</>
+            // }
         }
 
     }
